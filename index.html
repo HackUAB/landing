@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HackUAB</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/simple-line-icons/css/simple-line-icons.css">
+
+    <!-- Theme & Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/new-age.css" rel="stylesheet">
+    <link href="css/apply-button.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top" ng-app="hackcu2017">
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+
+
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" id="brand-text" href="/#page-top">HackUAB</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="/#about">About</a>
+                </li>
+                <!--li>
+                    <a class="page-scroll" href="/#apply">Apply</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#schedule">Schedule</a>
+                </li-->
+                <li>
+                    <a class="page-scroll" href="/#faq">FAQ</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#location">Location</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/travel.php">Travel</a>
+                </li>
+<!--
+                <li>
+                    <a class="page-scroll" href="/#sponsors">Sponsors</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#team">Team</a>
+                </li>
+-->
+                <li>
+                    <a class="page-scroll" href="/#contact">Contact</a>
+                </li>
+
+                <!--
+                    <li>
+                    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;width:10%;z-index:10000;" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+                    </li>
+                -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+<!--
+        <a id="mlh-trust-badge"
+           style="display:block;max-width:100px;min-width:60px;position:absolute;width:10%;z-index:10000;left:0"
+           href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white"
+           target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg"
+                                alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+-->
+    </div>
+    <!-- /.container-fluid -->
+
+
+</nav>
+
+<header>
+
+
+    <!--            <div class="keyart" id="nonparallax">-->
+    <div id="hero" ng-controller="HeaderCtrl">
+        <div class="row info-row">
+            <div class="col-md-12 container info-container">
+                <div class="header-content" style="z-index: 100;">
+                    <div class="header-content-inner text-center">
+
+                        <h1>HackUAB</h1>
+                        <p class="smallMar">Universitat Autònoma de Barcelona</p>
+                        <p>February 8<sup>th</sup> to February 10<sup>th</sup> 2019</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+<!--            Shows nonparallax image-->
+<!--            <div class="layer layer-07"></div>-->
+
+            <div class="layer layer-01" data-type="parallax" data-depth="0.10"></div>
+            <div class="layer layer-02" data-type="parallax" data-depth="0.20"></div>
+            <div class="layer layer-03" data-type="parallax" data-depth="0.40"></div>
+            <div class="layer layer-04" data-type="parallax" data-depth="0.55"></div>
+            <div class="layer layer-05" data-type="parallax" data-depth="0.68"></div>
+            <div class="layer layer-06" data-type="parallax" data-depth="1.00"></div>
+<!--            <div class="layer layer-06 " data-type="parallax" data-depth="1.00"></div>-->
+        </div>
+    </div>
+</header>
+
+
+
+<section id="about" class="text-center about">
+
+
+
+<div class="container" id="about">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12">
+            <img src="images/hackculogo.png" alt="hackcu logo" width="200"/>
+            <h2 class="section-heading">About Us</h2>
+	    <p>HackUAB, the first 36-hour hackathon hosted at the Autonomous University of Barcelona, brings together people of all experience levels, majors and backgrounds to UAB. HackUAB provides the space and the resources for you to express your creativity, ingenuity, and determination to create anything you want to.<br>We welcome any and all students to apply.</p>
+	    <a class="button" href="http://my.hackuab.com"><span>APPLY</span></a>
+        </div>
+    </div>
+</div>
+
+
+
+</section>
+
+<!--section id="apply" class="cta"-->
+    <!--?php //include('sections/apply.html'); ?-->
+<!--/section-->
+
+<section id="goals" class="faq">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="section-heading">
+                <h2>Goals</h2>
+                <h4 class="text-muted">Our goals for HackUAB</h4>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="feature-item">
+                            <i class="icon-emotsmile text-primary"></i>
+                            <h1 class="counter-number">300</h1>
+                            <p class="counter-subtext">Participants</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-item">
+                            <i class="icon-settings text-primary"></i>
+                            <h1 class="counter-number">75</h1>
+                            <p class="counter-subtext">Awesome Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-item">
+                            <i class="icon-cup text-primary"></i>
+                            <h1 class="counter-number">600</h1>
+                            <p class="counter-subtext">Energy Drinks</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-item">
+                            <i class="icon-hourglass text-primary"></i>
+                            <h1 class="counter-number">36</h1>
+                            <p class="counter-subtext">Hours of Hacking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<!--section id="schedule" class="text-center"-->
+    <!--?php //include('sections/schedule.html'); ?-->
+<!--/section-->
+
+
+<section id="faq" class="faq">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="section-heading">
+                <h2>FAQ</h2>
+                <h4 class="text-muted">All the important questions. Answered.</h4>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-user text-primary"></i>
+                            <h3>Who can attend?</h3>
+                            <p class="text-muted">We welcome any student 18 or older to participate! We always welcome volunteers, mentors, and sponsors to attend as well. <a href="contact.html">Contact us</a> for more information.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-handbag text-primary"></i>
+                            <h3>What do I bring?</h3>
+                            <p class="text-muted">A laptop, laptop charger, phone, chargers, headphones, a pillow, toiletries, an extra set of clothes, and a water bottle.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-wallet text-primary"></i>
+                            <h3>How much does HackUAB cost?</h3>
+                            <p class="text-muted">HackUAB is absolutely free to attend, and we will be providing all meals, snacks, and refreshments!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-plane text-primary"></i>
+                            <h3>Will you offer travel reimbursement?</h3>
+			    <p class="text-muted">Unfortunately we will not be able to provide travel reimbursements this time.<br>If you're still interested in coming check out our <a href="travel.php">travel page</a> for more info.</p>
+                            <!--<p class="text-muted">We will be offering travel reimbursement this year! Stay tuned for more info.</p>-->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-graduation text-primary"></i>
+                            <h3>How can I become a volunteer?</h3>
+                            <p class="text-muted">Sign up <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc-VlaBW-kij6AC2xxeitWEAtrD7Dpjy8lux5pipvQBb38Xbg/viewform?usp=sf_link">here.</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-wrench text-primary"></i>
+                            <h3>Do I have to be a programmer?</h3>
+                            <p class="text-muted">Absolutely not! It doesn’t matter if you are a designer, a writer, or a chemistry major. There is a place for you here. There will be a team formation session at the beginning of the event to help form teams.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-bulb text-primary"></i>
+                            <h3>What is a hackathon?</h3>
+                            <p class="text-muted">A hackathon is an event where motivated people come together and use technology and creativity to build something amazing. Any designers, writers, computer scientists or anyone interested in hackathons are welcome to attend!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-people text-primary"></i>
+                            <h3>Do I need a team? How large can my team be?</h3>
+                            <p class="text-muted">Don't have a team? We got you covered. We will have time before hacking begins for hackers to get together and form teams. You can have a maximum of 4 members on your team.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-cup text-primary"></i>
+                            <h3>Will there be food?</h3>
+                            <p class="text-muted">Yes, lots! We will provide three meals a day as well as snacks, drinks, and caffeine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-reload text-primary"></i>
+                            <h3>Can I reuse a previous project?</h3>
+                            <p class="text-muted">You can <u>NOT</u> use anything that you have started prior to the event. You can think of ideas for your project, but you need to start from scratch when you arrive.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <i class="icon-question text-primary"></i>
+                            <h3>Have another question?</h3>
+                            <p class="text-muted">Feel free to shoot us an email at <a href="mailto:team@hackuab.com">team@hackuab.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<section id="location" class="text-center">
+
+
+<div class="container" id="location">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h2>Location</h2>
+            <div class="overlay" onClick="document.getElementById('map').style.pointerEvents='auto'">
+	      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5976.269305109667!2d2.0990231525704233!3d41.501356740768365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a495d5c73a87eb%3A0x21585445892b1413!2sUAB+School+Of+Engineering+and+Economics!5e0!3m2!1sen!2ses!4v1538579550841" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <button class="btn btn-primary" id="butt" onclick="getRoute()">Calculate Route to HackCU</button>
+        </div>
+    </div>
+    -->
+
+</div>
+
+
+
+</section>
+<!--section id="volunteer" class="text-center"-->
+    <!--?php //include('sections/volunteer.html'); ?-->
+<!--/section-->
+
+<!--
+<section id="sponsors" class="text-center">
+    <?php //include('sections/sponsors.html'); ?>
+</section>
+-->
+
+<!--
+<section id="judges" class="text-center">
+    <?php //include('sections/judges.html'); ?>
+</section>
+-->
+
+
+<!--
+<section id="team" class="text-center">
+    <?php //include('sections/team.html'); ?>
+</section>
+-->
+
+<section id="contact" class="contact">
+
+
+<div class="container">
+    <!--<h2>We <i class="fa fa-heart"></i> new friends!</h2>-->
+    <h2>Contact Us</h2>
+    <ul class="list-inline list-social">
+	<!--
+        <li class="social-twitter">
+            <a href="https://twitter.com/hackcu" target="_blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="social-facebook">
+            <a href="https://www.facebook.com/HackCU/" target="_blank"><i class="fa fa-facebook"></i></a>
+        </li>
+	-->
+        <li class="social-facebook">
+            <a href="mailto:team@hackuab.com" target="_blank"><i class="fa fa-envelope"></i></a>
+        </li>
+    </ul>
+    <br>
+    <p>Please email your questions or comments to <a href="mailto:team@hackuab.com">team@hackuab.com</a></p>
+</div>
+
+
+</section>
+
+<footer>
+
+
+    <div class="container">
+
+        <p>Built combining the groups strenghs in every field, with passion and with love</p>
+        <div class="row">
+            <div class="col-lg-4">
+                <ul>
+                    <li>
+                        <a href="mailto:team@hackuab.com" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>
+                        <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+<script>
+
+    window.addEventListener('scroll', function () {
+        var depth, i, layer, layers, len, movement, topDistance, translate3d;
+        topDistance = this.pageYOffset;
+        layers = document.querySelectorAll("[data-type='parallax']");
+
+        for (i = 0, len = layers.length; i < len; i++) {
+            layer = layers[i];
+            depth = layer.getAttribute('data-depth');
+            movement = -(topDistance * depth);
+            translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+            layer.style['-webkit-transform'] = translate3d;
+            layer.style['-moz-transform'] = translate3d;
+            layer.style['-ms-transform'] = translate3d;
+            layer.style['-o-transform'] = translate3d;
+            layer.style.transform = translate3d;
+        }
+    });
+
+
+</script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Angular Core JavaScript -->
+<script src="bower_components/angular/angular.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/new-age.js"></script>
+
+<!-- Angular App JS -->
+<script src="js/app.js"></script>
+
+<!-- External JS -->
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/parallax.js"></script>
+
+</body>
+
+</html>

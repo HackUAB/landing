@@ -1,0 +1,106 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 183px;
+    height: 64px;
+    padding: 4px 10px 0 0;
+    background: url(../images/button-purple.svg) center/cover no-repeat;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    transform-origin: center;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 0.6s;
+    z-index: 1;
+    margin:auto;
+}
+.button:hover {
+    animation: levitateBtn 2s linear infinite;
+    color: #fff;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+.button:hover:before {
+    opacity: 1;
+}
+.button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background: rgba(255,0,0,0.2);
+/*
+    background: linear-gradient(90deg, #A065AA 0%, #4F72B8 100%);
+*/
+    background: linear-gradient(90deg, #faae17 0%, #963a20 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .4s ease-in-out;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+.button:hover:after {
+    animation: levitateBtnShadow 2s linear infinite;
+}
+.button:after {
+    content: '';
+    width: 60%;
+    left: 20%;
+    bottom: -20px;
+    position: absolute;
+    border-radius: 30%;
+    box-shadow: 0px 0px 30px 0px rgba(28,35,41,0.3);
+    background: rgba(28,35,41,0.3);
+    display: block;
+    height: 20px;
+    transform-origin: center;
+    transform: scale(0);
+}
+@keyframes levitateBtn {
+    0% {
+        transform: translateY(0) rotate(0);
+        transform-origin: center
+    }
+
+    25% {
+        transform: translateY(-2px)
+    }
+
+    50% {
+        transform: translateY(-5px) rotate(0deg)
+    }
+
+    75% {
+        transform: translateY(-2px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes levitateBtnShadow {
+    0% {
+        transform: scale(0.5)
+    }
+
+    50% {
+        transform: scale(0.2)
+    }
+
+    100% {
+        transform: scale(0.5)
+    }
+}

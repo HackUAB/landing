@@ -1,0 +1,10 @@
+workspace.xml
+/website/nbproject/private/
+*.swp
+Thumbs.db
+.idea/*
+
+/bower_components
+node_modules/*
+/npm-debug.log
+.DS_STORE
