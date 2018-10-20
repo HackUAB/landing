@@ -42,7 +42,7 @@
 
   gtag('config', 'UA-127117009-1');
 </script>
-
+    <link rel="stylesheet" type="text/css" href="css/mainsection.css" />
 </head>
 
 <body id="page-top" ng-app="hackcu2017">
@@ -119,14 +119,16 @@
 
     <!--            <div class="keyart" id="nonparallax">-->
     <div id="hero" ng-controller="HeaderCtrl">
+      <div id="pixiCanvas"></div>
         <div class="row info-row">
             <div class="col-md-12 container info-container">
                 <div class="header-content" style="z-index: 100;">
                     <div class="header-content-inner text-center">
 
-                        <h1>HackUAB</h1>
-                        <p class="smallMar">Universitat Autònoma de Barcelona</p>
-                        <p>February 15<sup>th</sup> to February 17<sup>th</sup> 2019</p>
+                      <!--<h1>HackUAB</h1>
+                      <p class="smallMar">Universitat Autònoma de Barcelona</p>
+                      <p>February 15<sup>th</sup> to February 17<sup>th</sup> 2019</p>
+--><img id="imgheader" width="100%" src="images/titulo.png" alt="Girl in a jacket">
 
                     </div>
                 </div>
@@ -136,12 +138,12 @@
 <!--            Shows nonparallax image-->
 <!--            <div class="layer layer-07"></div>-->
 
-            <div class="layer layer-01" data-type="parallax" data-depth="0.10"></div>
+          <!--  <div class="layer layer-01" data-type="parallax" data-depth="0.10"></div>
             <div class="layer layer-02" data-type="parallax" data-depth="0.20"></div>
             <div class="layer layer-03" data-type="parallax" data-depth="0.40"></div>
             <div class="layer layer-04" data-type="parallax" data-depth="0.55"></div>
             <div class="layer layer-05" data-type="parallax" data-depth="0.68"></div>
-            <div class="layer layer-06" data-type="parallax" data-depth="1.00"></div>
+            <div class="layer layer-06" data-type="parallax" data-depth="1.00"></div>-->
 <!--            <div class="layer layer-06 " data-type="parallax" data-depth="1.00"></div>-->
         </div>
     </div>
@@ -273,7 +275,7 @@
                         <div class="feature-item">
                             <i class="icon-plane text-primary"></i>
                             <h3>Will you offer travel reimbursement?</h3>
-			    <p class="text-muted">Unfortunately we will not be able to provide travel reimbursements this time.</p>
+			    <p class="text-muted">We will be offering limited travel reimbursements this year! If you get accepted we will contact you with further information.</p>
 <!--
 			    <br>If you're still interested in coming check out our <a href="travel.php">travel page</a> for more info.</p>
 -->
@@ -447,7 +449,7 @@
 </footer>
 
 <script>
-
+/*
     window.addEventListener('scroll', function () {
         var depth, i, layer, layers, len, movement, topDistance, translate3d;
         topDistance = this.pageYOffset;
@@ -466,7 +468,7 @@
         }
     });
 
-
+*/
 </script>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
@@ -490,6 +492,10 @@
 <script src="js/waypoints.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
 <script src="js/parallax.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/mainsection.js"> </script>
 
 </body>
 
