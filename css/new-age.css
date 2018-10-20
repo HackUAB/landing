@@ -175,7 +175,8 @@ header {
   position: relative;
   width: 100%;
   overflow-y: hidden;
-  background-color: #220B0D;
+  /*background-color: #220B0D;*/
+  background-image: url("../images/bg.png");
   /*background: url("../images/bg-pattern.png"), #943A24;*/
   /*!* fallback for old browsers *!*/
   /*background: url("../images/bg-pattern.png"), -webkit-linear-gradient(to left, #F9AD36, #943A24);*/
@@ -551,7 +552,7 @@ body {
 }
 
 #about {
-  background-color: #220B0D;
+  background-color: #1b2a2b;
   color: #F4C976;
   padding: 1em;
   padding-bottom:3em;
@@ -582,33 +583,39 @@ body {
     height: 100vh;
   }
   #hero {
-      background-image: url("../images/mobile_images/miniscreen.png");
+        background-image: url("../images/bg.png");
       background-position: bottom;
-      background-repeat: no-repeat;
+
       background-color: #FAAE17;
   }
   .layer-01 {
-    background-image: url("../images/mobile_images/miniscreen.png");
+      background-image: url("../images/bg.png");
     height: 100vh;
     display:none;
     /*background-color: #ffaf1b;*/
   }
   .layer-02 {
+      background-image: url("../images/bg.png");
       display:none;
   }
   .layer-03 {
+      background-image: url("../images/bg.png");
       display:none;
   }
   .layer-04 {
+      background-image: url("../images/bg.png");
       display:none;
   }
   .layer-05 {
+      background-image: url("../images/bg.png");
       display:none;
   }
   .layer-06 {
+    background-image: url("../images/bg.png");
       display:none;
   }
   .layer-07 {
+      background-image: url("../images/bg.png");
       display:none;
   }
 }
@@ -643,7 +650,7 @@ body {
       position: static !important;
   }
   .layer-01 {
-    background-image: url("../images/smallscreen_images/smallscreen6.png");
+      background-image: url("../images/bg.png");
     background-width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -653,35 +660,35 @@ body {
 
   }
   .layer-02 {
-    background-image: url("../images/smallscreen_images/smallscreen5.png");
+      background-image: url("../images/bg.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
   .layer-03 {
-    background-image: url("../images/smallscreen_images/smallscreen4.png");
+      background-image: url("../images/bg.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
   .layer-04 {
-    background-image: url("../images/smallscreen_images/smallscreen3.png");
+      background-image: url("../images/bg.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
   .layer-05 {
-    background-image: url("../images/smallscreen_images/smallscreen2.png");
+      background-image: url("../images/bg.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
   .layer-06 {
-    background-image: url("../images/smallscreen_images/smallscreen1.png");
+      background-image: url("../images/bg.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -689,7 +696,7 @@ body {
     padding-top:138em;
   }
   .layer-07 {
-    background-image: url("../images/smallscreen_images/smallscreenbackground.png");
+      background-image: url("../images/bg.png");
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
