@@ -431,3 +431,4 @@ function animate() {
   repositionAll();
   renderer.render(container);
 }
+onMouseMove({clientX:0, clientY:0});
