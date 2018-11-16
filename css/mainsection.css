@@ -2,10 +2,8 @@
 
 @media (max-width: 767px){
   #pixiCanvas{
-    display: none;
   }
   #imgheader{
-    display: auto;
   }
 }
 @media (min-width: 767px){

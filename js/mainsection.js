@@ -62,12 +62,14 @@ function onWindowResize() {
   renderer.resize(WIDTH, HEIGHT);
   repositionAll();
   if (window.innerWidth<440) {
-    castle.initScaleX=0.5*window.innerWidth/530/2
-    castle.initScaleY=0.5*window.innerWidth/530/2
+    //castle.initScaleX=0.5*window.innerWidth/530/2
+    //castle.initScaleY=0.5*window.innerWidth/530/2
+    castle.initPcX=0.5-0.15*window.innerWidth/500
     console.log(castle);
   }else {
     castle.initScaleX=0.5
     castle.initScaleY=0.5
+    castle.initPcX=0.5
   }
 console.log(window.innerWidth);
 }
@@ -432,3 +434,4 @@ function animate() {
   renderer.render(container);
 }
 onMouseMove({clientX:0, clientY:0});
+renderer.view.style['touch-action'] = 'auto';
