@@ -434,4 +434,6 @@ function animate() {
   renderer.render(container);
 }
 onMouseMove({clientX:0, clientY:0});
+renderer.plugins.interaction.autoPreventDefault = false;
+renderer.view.style.touchAction = 'auto';
 renderer.view.style['touch-action'] = 'auto';
