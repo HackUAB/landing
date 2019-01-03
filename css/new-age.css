@@ -928,13 +928,10 @@ body {
 }
 
 #sponsors img {
-  opacity: 0.5;
+  opacity: 1;
   margin: 2em;
 }
 
-#sponsors img:hover {
-  opacity: 1;
-}
 
 #judges img{
   transition: .3s;

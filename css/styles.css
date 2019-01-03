@@ -43,13 +43,6 @@ body {
   width: 300px;
 }
 
-.sponsors li img:hover {
-  transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-  width: 310px;
-}
-
 .team {
   margin-left: -2%;
   width: 100%;
